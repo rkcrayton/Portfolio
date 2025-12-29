@@ -54,11 +54,12 @@ h2 {
 }
 
 .skills-tag {
-    display: inline-block;
+    display: inline-flex;
     background-color: #007BFF;
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 15px;
     margin: 5px 5px 0 0;
     font-size: 14px;
+    gap: 10px;
 }
