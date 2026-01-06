@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
         <img class="profile-image" src="Raheem.jpeg" alt="Raheem Crayton">
-        <h1 class="name-text">Raheem Crayton</h1>
+        <h1 class="name-text" id = "name"></h1>
     </div>
     <div class="contact-info">
         <p>Phone: (334) 7404695 | Email: <a href="mailto:raheemcrayton8@gmail.com">raheemcrayton8@gmail.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/raheem-crayton-81aa9b236" target="_blank">LinkedIn Profile</a></p>
@@ -18,7 +19,19 @@
     <main>
         <div class = "Summary">
             <h2>Summary</h2>
-                <p>Highly motivated and detail-oriented professional with a strong background in web development and a passion for creating user-friendly and efficient websites. Proficient in HTML, CSS, JavaScript, and various front-end frameworks such as React and Vue.js. Experienced in collaborating with cross-functional teams to deliver high-quality projects on time.</p>
+                <p>Computer Science student at the University of Alabama passionate about solving complex problems through efficient,
+                    impactful software solutions. Currently serving as an Engineering Co-Op at Phifer Incorporated, where I secure 
+                    enterprise networks, manage critical infrastructure, and implement cost effective technical solutions, 
+                    complemented by CompTIA Security+ and A+ certifications. My diverse background spans IT systems administration, 
+                    ethical hacking, and full-stack development, with hands on experience building web and mobile applications from 
+                    the ground up. Recent projects include a gamified fitness tracker leveraging Python, Flask, Swift, and RESTful APIs 
+                    to create engaging user experiences. My military service as a National Guard vehicle mechanic has honed my ability 
+                    to work effectively in team environments, troubleshoot under pressure, and approach technical challenges with 
+                    discipline and precision. Proficient across multiple domains from network security and system administration to 
+                    mobile development with Swift and web applications with React. I thrive on understanding systems at their core 
+                    and building solutions that make a tangible difference in people's lives. Eager to contribute to software engineering, 
+                    IT security, or game development roles where I can apply my technical versatility and problem solving mindset.
+                </p>
         </div>
         <hr />
         <div class = "Education">
@@ -68,18 +81,18 @@
         <hr />
         <div class = "Skills">
             <h2>Skills</h2>
-                <span class = "skills-tag"> C++</span>
-                <span class = "skills-tag"> C</span>
-                <span class = "skills-tag"> Swift</span>
-                <span class = "skills-tag"> Java</span>
-                <span class = "skills-tag"> Python</span>
-                <span class = "skills-tag"> Linux</span>
-                <span class = "skills-tag"> Flask</span>
-                <span class = "skills-tag"> Git</span>
-                <span class = "skills-tag"> Data Structures and Algorithms</span>
-                <span class = "skills-tag"> Full Stack</span>
-                <span class = "skills-tag"> React</span>
-                <span class = "skills-tag"> Kali</span>
+                <span  class = "skills-tag" data-skill = "C++"> C++</span>
+                <span  class = "skills-tag" data-skill = "C"> C</span>
+                <span  class = "skills-tag" data-skill = "Swift"> Swift</span>
+                <span  class = "skills-tag" data-skill = "Java"> Java</span>
+                <span  class = "skills-tag" data-skill = "Python"> Python</span>
+                <span  class = "skills-tag" data-skill = "Linux"> Linux</span>
+                <span  class = "skills-tag" data-skill = "Flask"> Flask</span>
+                <span  class = "skills-tag" data-skill = "Git"> Git</span>
+                <span  class = "skills-tag" data-skill = "Data Structures and Algorithms"> Data Structures and Algorithms</span>
+                <span  class = "skills-tag" data-skill = "Full Stack"> Full Stack</span>
+                <span  class = "skills-tag" data-skill = "React"> React</span>
+                <span  class = "skills-tag" data-skill = "Kali"> Kali</span>
         </div>
         <hr />
             <div class = "Projects">  
@@ -99,6 +112,15 @@
     </main>
         </br>
     <hr />
+    <button id="backToTop" class="back-to-top">↑ Top</button>
+    <!-- Modal for displaying skill projects -->
+    <div id="skillModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
     <footer>
         <p>© 2025 Raheem Crayton. All rights reserved.</p>
     </footer>
