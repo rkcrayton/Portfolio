@@ -94,6 +94,21 @@ const skillProjects = {
                 ]
             }
         ]
+    },
+
+    "Git": {
+        title: "Git",
+        projects:[
+                {
+                name: "Version Control with Git",
+                description: "Version control system used across all projects for code management and collaboration.",
+                technologies: ["Git", "GitHub"],
+                accomplishments: [
+                    "Utilized Git for version control in all projects",
+                    "Managed code repositories on GitHub"
+                ]
+            }
+        ]
     }
     // Add more skills...
 };
