@@ -53,17 +53,26 @@ const skillProjects = {
         title: "Python Projects",
         projects: [
             {
-                name: "Workout Tracker App (Fitagotchi)",
+                name: "Backend (Fitagotchi)",
                 description: "Created a gamified fitness tracker that rewards users for completing workouts, integrated with Apple Health data.",
-                technologies: ["Python", "Flask", "SQLite"],
-                github: "https://github.com/rkcrayton/Fitagotchi.git",
+                technologies: ["Python", "FastApi", "SQLite"],
+                github: "https://github.com/rkcrayton/Fitagotchi_react.git",
                 accomplishments: [
                     "Designed backend APIs with Flask",
                     "Used SQLite to store and track users' progress",
                     "Built Tamagotchi-style virtual pet that evolves based on user activity"
                 ]
+            },
+            {
+                name: "Kanye Qoutes App",
+                description: "Created a Kanye Qoutes App",
+                technologies: ["Python"],
+                github: "https://github.com/rkcrayton/Kanye-quotes-app.git",
+                accomplishments: [
+                    "Designed api connections"
+                ]
             }
-            // Add more Python projects here
+
         ]
     },
     "Swift": {
@@ -85,12 +94,14 @@ const skillProjects = {
         title: "React Projects",
         projects: [
             {
-                name: "Workout Logger Application",
-                description: "Built a React-based workout logging system",
+                name: "Fitagochi Application",
+                description: "Built Fitagochi Application reworked with React Native for cross platform",
                 technologies: ["React", "JavaScript"],
+                github: "https://github.com/rkcrayton/Fitagotchi_react.git",
                 accomplishments: [
                     "Learned React through hands-on project development",
-                    "Implemented state management for workout tracking"
+                    "Implemented state management for workout tracking",
+                    "Implement Health data from user built in health kit"
                 ]
             }
         ]
@@ -109,8 +120,191 @@ const skillProjects = {
                 ]
             }
         ]
+    },
+    "Kali": {
+        title: "Kali",
+        projects: [
+            {
+                name: "Kali",
+                description: "Use Kali Linux for penetration testing",
+                technologies: ["Kali"],
+                accomplishments: [
+                    "Hacked over 20 machines in HackTheBox",
+                ]
+
+            }
+        ]
+    },
+    "C++": {
+        title: "C++ Projects",
+        projects: [
+            {
+                name: "Circular Dynamic Array",
+                description: "This array used linked list to make an array that grew and shrunk in size. Ran in O(N) time.",
+                technologies: ["C++"],
+                accomplishments: [
+                    ""
+                ]
+            },
+            {
+              name: "Lisp Interpreter",
+              description: "Designed and implemented a C++ Lisp Interpreter with support for s-expressions, scoped evaluation, conditionals, lambdas, and user defined functions.",
+              technologies: ["C++"],
+              github: "https://github.com/rkcrayton/Lisp-Interpreter.git",
+              accomplishments: [
+                  "Core S-expression data structure (Value), constructors (cons, car, cdr), and type predicates (isNil, isNumber, etc.).",
+                  "Extended constructors and accessors, including sexp(string), isString, and robust equality (eq).",
+                  "Arithmetic, comparison, and logical functions (add, sub, lt, gte, not, etc.) with error handling.",
+                  "Implemented the core eval function along with an environment for symbol lookup and assignment, enabling evaluation of atoms, special forms (quote, set, etc.), and function calls using built-in operations.",
+                  "Added short-circuiting logic and conditionals—implementing and, or, if, and cond so only the necessary branches/arguments are evaluated (with and/or short-circuit behavior and cond selecting the first true clause).",
+                  "User-defined functions with define, parameter binding, and local scope handling.",
+                  "Added support for lambda functions, enabling anonymous, user-defined functions that can be created, passed as arguments, returned from other functions, and evaluated with their own local environments"
+              ]
+            }
+        ]
+    },
+    "C": {
+        title: "C Projects",
+        projects: [
+            {
+                name: "",
+                description: "",
+                technologies: ["C"],
+                accomplishments: [
+                    ""
+                ]
+            }
+        ]
+    },
+    "Java": {
+        title: "Java Projects",
+        projects: [
+            {
+                name: "",
+                description: "",
+                technologies: ["Java"],
+                accomplishments: [
+                    ""
+                ]
+            }
+        ]
+    },
+    "Linux": {
+        title: "Linux",
+        projects: [
+            {
+                name: "Enterprise Systems Administration",
+                description: "Managed and maintained Linux-based systems as part of IT engineering role at Phifer Incorporated.",
+                technologies: ["Linux", "Bash", "Networking"],
+                accomplishments: [
+                    "Maintained security patching and OS updates for 1000+ workstations",
+                    "Built Python monitoring scripts to collect system and network metrics",
+                    "Configured and managed file servers including permissions and access protocols"
+                ]
+            }
+        ]
+    },
+    "Flask": {
+        title: "Flask Projects",
+        projects: [
+            {
+                name: "",
+                description: "",
+                technologies: ["Flask"],
+                accomplishments: [
+                ]
+            }
+        ]
+    },
+    "Full Stack": {
+        title: "Full Stack Projects",
+        projects: [
+            {
+                name: "Fitagotchi",
+                description: "Developed a React Native fitness app with a FastAPI backend and SQLite database leveraging gamification to promote workout consistency.",
+                technologies: ["React Native", "FastAPI", "Python", "SQLite", "Swift"],
+                github: "https://github.com/rkcrayton/Fitagotchi_react.git",
+                accomplishments: [
+                    "Built frontend with React Native for cross-platform support",
+                    "Designed backend APIs with FastAPI",
+                    "Used SQLite to store and track users' progress",
+                    "Integrated with Apple Health data",
+                    "Built Tamagotchi-style virtual pet that evolves based on user activity"
+                ]
+            }
+        ]
+    },
+    "Pytorch": {
+        title: "Pytorch Projects",
+        projects: [
+            {
+                name: "Mnist Digit Classifier",
+                description: "Implemented and trained a convolutional neural network in PyTorch, focusing on data preprocessing pipeline, model evaluation, and performance optimization",
+                technologies: ["Pytorch"],
+                accomplishments: [
+                    ""
+                ]
+            }
+        ]
+    },
+    "Ros2": {
+        title: "Ros2 Projects",
+        projects: [
+            {
+                name: "Automous tag collector bot",
+                description: "I used Ros2 to program a bot through a maze to collect tags.",
+                technologies: ["Ros2"],
+                accomplishments: [
+                    ""
+                ]
+            }
+        ]
+    },
+    "Gaezbo": {
+        title: "Gazebo Projects",
+        projects: [
+            {
+                name: "Autonomous Tag Collector Bot",
+                description: "Used ROS2 and Gazebo to simulate and program a bot to navigate through a maze and collect tags.",
+                technologies: ["Gazebo", "ROS2"],
+                accomplishments: [
+                    "Programmed a bot to autonomously navigate through a maze",
+                    "Simulated robot behavior in Gazebo environment",
+                    "Collected tags using sensor-based navigation"
+                ]
+            }
+        ]
+    },
+    "Unity": {
+        title: "Unity Projects",
+        projects: [
+            {
+                name: "Zombie Slayer",
+                description: "Created a Unity based top-down shooter featuring wave-based zombie AI, combat mechanics, and survival gameplay.",
+                technologies: ["Unity", "C#"],
+                accomplishments: [
+                    "Implemented wave-based zombie AI",
+                    "Designed combat mechanics and survival gameplay",
+                    "Built top-down shooter game from the ground up"
+                ]
+            }
+        ]
+    },
+    "C#": {
+        title: "C# Projects",
+        projects: [
+            {
+                name: "Zombie Slayer",
+                description: "Created a Unity based top-down shooter featuring wave-based zombie AI, combat mechanics, and survival gameplay.",
+                technologies: ["C#", "Unity"],
+                accomplishments: [
+                    "Implemented wave-based zombie AI",
+                    "Designed combat mechanics and survival gameplay",
+                    "Built top-down shooter game from the ground up"
+                ]
+            }
+        ]
     }
-    // Add more skills...
 };
 
 // Skill projects data (put the data structure from Step 1 here)
